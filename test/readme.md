@@ -1,27 +1,3 @@
-# DoubleChecker
-
-## Installlation
-
-First, install torch 2.6.0 + cuda12.4 and vllm=0.8.5.post1
-```bash
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
-pip install vllm==0.8.5.post1
-```
-
-Then, install llama_factorcy:
-
-```bash
-git clone https://github.com/XinXU-USTC/DoubleChecker.git
-cd DoubleChecker/train/LLaMA-Factory/
-pip install -e .
-```
-
-## Training
-
-To train DeepSeek-Distill-7B model, please first revise ```train/LLaMA-Factory//scripts/double-checker-ds-qwen7b.yaml``` accordingly and then run the following command:
-```bash
-llamafactory-cli train ../scripts/double-checker-ds-qwen7b.yaml
-```
 
 ## Benchmark Evaluation
 
